@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Montserrat&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', 'sans-serif';
+}
+body{
+    line-height: 1.6;
+}
+.heading{
+    text-align: center;
+    font-weight: 1000;
+    margin:60px;
+
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search-bar{
+    width:300px;
+    height:40px;
+    text-align: center;
+    border-radius: 6px;
+}
+#search-btn  {
+    height:40px;
+    margin-left: 10px;
+    padding:10px;
+    text-align: center;
+    background-color: greenyellow;
+    border-radius: 6px;
+    box-shadow: 4px 1px 5px yellow;
+    transition: 0.25s ease-in-out;
+}
+#search-btn:hover{
+    background-color: black;
+    color:white;
+}
+.search-result-section{
+    display: flex;
+    margin:40px;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    min-width: 40%;
+    gap:10px;
+    
+}
+.search-result-section img{
+    transition: 0.25s ease-in-out;
+
+}
+.search-result-section img:hover{
+    opacity: 75%;
+}
+.search-result{
+    overflow: hidden;
+    width:30%;
+    height:100%;
+}
+.search-result img{
+    object-fit: cover;
+}
+.description{
+    margin:20px;
+    font-size: 1.6em;
+    text-decoration: none;
+    color:black;
+    display: inline;
+
+}
+#show-more-btn{
+    width:150px;
+    padding:10px;
+    margin:70px;
+    background-color: greenyellow;
+    border-radius: 20px;
+    transition: 0.25s ease-in-out;
+    display: none;
+}
+#show-more-btn:hover{
+    background-color: black;
+    color:white;
+}
+/* Add this to your existing CSS code */
+.search-result {
+    position: relative;
+}
+
+.download-icon {
+    position: absolute;
+    bottom: 40px;
+    right: 34px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .search-result-section{
+        flex-wrap: wrap;
+    }
+    .search-result img{
+       width:100%;
+       border-radius: 10px;
+    }
+    .description{
+        margin: 40px;
+    }
+}
+@media screen and (max-width:455px) {
+
+    .downoload-icon{
+        bottom:10px;
+        left:50px;
+    }
+    body{
+        background-color: black;
+        color:white;
+    }
+    .search-result-section{
+        flex-wrap: wrap;
+    }
+    .search-result{
+        width:100%;
+    }
+    .search-result img{
+       min-width:100%;
+       border-radius: 20px;
+       object-fit: cover;
+    }
+    .search-result-section a{
+        /* margin-bottom:20px; */
+        font-size:1em;
+        color:white;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    form input{
+        width:100%;
+        margin:10px;
+        box-shadow: 2px 4px 5px gray;
+    }
+    form button{
+        width:50%;
+        box-shadow: 2px 5px 5px rgb(53, 131, 177);
+    }
+    form{
+        flex-wrap: wrap;
+    }
+}
+
